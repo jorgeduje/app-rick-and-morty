@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, {useEffect, useState} from 'react'
 import "./ResidentInfo.css"
 
-export const ResidentInfo = ({url}) => {
+export const ResidentInfo = ( { url } ) => {
 
     const [ character, setCharacter] = useState({})
 

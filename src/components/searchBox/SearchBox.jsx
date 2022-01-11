@@ -15,9 +15,12 @@ export const SearchBox = () => {
 
     const [id, setId] = useState(randomId)
 
+    const [cero, setCero] = useState(0)
+    const [diez, setDiez] = useState(10)
+
     useEffect(() => {
 
-        axios.get(`https://rickandmortyapi.com/api/location/${randomId}`)
+        axios.get(`https://rickandmortyapi.com/api/location/${id}`)
             .then(res => setDataApi(res.data))
             .catch(err => console.log(err))
        
@@ -29,9 +32,11 @@ export const SearchBox = () => {
         axios.get(`https://rickandmortyapi.com/api/location/${id}`)
             .then(res => setDataApi(res.data))
             .catch(err => console.log(err))
-            console.log(id)
+        setCero(0)
+        setDiez(10)    
+           
     }
-      
+  
 
     return (
 
@@ -54,6 +59,10 @@ export const SearchBox = () => {
 
         <ResidentList 
             residents={dataApi?.residents}
+            cero={cero}
+            setCero={setCero}
+            diez={diez}
+            setDiez={setDiez}
         />
 
                 

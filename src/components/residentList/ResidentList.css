@@ -13,6 +13,28 @@
 }
 
 
+
+.container-btns{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.btn-1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: steelblue;
+    color: white;
+    border: none;
+}
+
+
 @media screen and (max-width: 700px) {
 
     .container-resident{
