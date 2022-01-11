@@ -25,7 +25,7 @@ export const ResidentInfo = ( { url } ) => {
             <img src={character?.image} alt="" />
             <div className='card-info'>
                 <h3>{character?.name}</h3>
-                <h5>{character?.origin?.name}</h5>
+                <h5>{`Origin: ${character?.origin?.name}`}</h5>
                 <div className='status'>
                     <div className={character?.status === "Alive" ? "btn-status2" : (character?.status === "Dead" ? "btn-status1": "btn-status3")}></div>
                     <h5>{character?.status}</h5>
