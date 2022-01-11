@@ -9,7 +9,7 @@ export const LocationInfo = ({ name, type, residents, dimension }) => {
                 <h1>{`Location: ${name}`}</h1>
                 <div className='location-info'>
                     <li><span>Type: </span>{type}</li>
-                    <li><span>Dimension: </span>{dimension}</li>
+                    <li><span>Dimension: </span>{ dimension === "unknown" ? "------" : dimension}</li>
                     <li><span>Amount's Residents: </span>{residents?.length}</li>
                 </div>
             </div>

@@ -4,6 +4,8 @@ import "./ResidentInfo.css"
 
 export const ResidentInfo = ( { url } ) => {
 
+
+
     const [ character, setCharacter] = useState({})
 
     useEffect(() => {
@@ -14,6 +16,8 @@ export const ResidentInfo = ( { url } ) => {
 
     }, [url])
 
+  
+
 
 
     return (
@@ -23,7 +27,7 @@ export const ResidentInfo = ( { url } ) => {
                 <h3>{character?.name}</h3>
                 <h5>{character?.origin?.name}</h5>
                 <div className='status'>
-                    <div className={character?.status === "Alive" ? "btn-status2" : "btn-status1"}></div>
+                    <div className={character?.status === "Alive" ? "btn-status2" : (character?.status === "Dead" ? "btn-status1": "btn-status3")}></div>
                     <h5>{character?.status}</h5>
                 </div>
                 <h5>{`Appears on: ${character?.episode?.length} episodes`}</h5>   
