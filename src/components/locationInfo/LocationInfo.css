@@ -5,8 +5,9 @@
 }
 .container>img{
     width: 100%;
-    object-fit: fill;
-    height: 50vh;
+    object-fit: cover;
+    height: 60vh;
+    object-position: center;
 
 }
 .location{
