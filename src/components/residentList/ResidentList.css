@@ -1,0 +1,23 @@
+.container-resident{
+
+    width: 80%;
+    margin: 30px auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 50px 20px;
+    border-radius: 20px;
+    
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .container-resident{
+        width: 100%;
+        justify-content: center;
+    }
+    
+}
