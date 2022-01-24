@@ -4,7 +4,7 @@ import "./LocationInfo.css"
 export const LocationInfo = ({ name, type, residents, dimension }) => {
     return (
         <div className='container'>
-            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rick-and-morty-s5-2-1625139647.jpg?crop=0.803xw:0.709xh;0.0896xw,0.202xh&resize=1200:*" alt="" />
+            <img src="https://giffiles.alphacoders.com/118/118789.gif" alt="" />
             <div className='location'>
                 <h1>{`Location: ${name}`}</h1>
                 <div className='location-info'>

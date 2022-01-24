@@ -17,9 +17,6 @@ export const ResidentInfo = ( { url } ) => {
     }, [url])
 
   
-
-
-
     return (
         <div className='card-resident'>
             <img src={character?.image} alt="" />

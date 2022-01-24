@@ -1,11 +1,8 @@
 import React from 'react'
-
 import { ResidentInfo } from '../residentInfo/ResidentInfo'
 import "./ResidentList.css"
 
 export const ResidentList = ({residents, cero, setCero, diez, setDiez}) => { 
-
-    
 
     const paginar = ( indice )=>{
         
@@ -14,7 +11,6 @@ export const ResidentList = ({residents, cero, setCero, diez, setDiez}) => {
         
     }
 
-   
     let pagina = residents?.slice(cero, diez)
 
     let cantidadPaginas = ( Math.ceil(residents?.length / 10) )
@@ -23,13 +19,13 @@ export const ResidentList = ({residents, cero, setCero, diez, setDiez}) => {
     
     for (let index = 0; index < cantidadPaginas; index++) {
 
-        
         array.push(index)
     }
 
 
     return (
        <div>
+           
             <div className='container-resident'>
 
                 {
@@ -41,7 +37,6 @@ export const ResidentList = ({residents, cero, setCero, diez, setDiez}) => {
 
             </div>
 
-            
 
            <div className='container-btns'>
             {
